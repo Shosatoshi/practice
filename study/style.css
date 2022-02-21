@@ -3,8 +3,79 @@
     padding: 0;
 }
 
-.box {
-    height: 300px;
-    width: 200px;
+.w {
+    width: 1200px;
+    margin: auto;
+}
+/* 共通，凡是在版面中心的都可以使用 */
+
+li {
+    list-style: none;
+}
+
+.header {
+    height: 42px;
     background-color: pink;
+    margin: 30px auto;
+    /* 会层叠.w里的margin，所以要加auto */
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    background-color: purple;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+/* 不给宽度，将来可以继续添加 */
+ 
+.nav ul li{
+    float: left;
+}
+/* 给li而不是a加浮动，因为li是块元素，a是行内元素 */
+
+a {
+    text-decoration: none;
+}
+
+.nav ul li a{
+    display: block;
+    /* 不懂 */
+    height: 42px; 
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+/* 导航栏内文字不一样多，所以用padding撑开盒子 */
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    background-color:skyblue;
+}
+  
+.search input {
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    /* 右边不加边框 */
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.user {
+    float: left;
 }

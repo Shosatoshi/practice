@@ -10,7 +10,31 @@
 </head>
 
 <body>
-    <div class="box">S</div>
+    <!-- 先确定版心
+    从上到下，做完第一行的要素的所有要素，再做下一行的 -->
+    <div class="header w">
+        <!-- 同时利用两个class -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+            <!-- 实际开发中，不会直接用链接，而是用li包含链接（li+a）
+            的做法 -->
+            <!-- SEO网站优化 直接用a的话，搜索引擎容易辨别为有堆砌关键字的嫌疑，影响网站排名 -->
+        </div>
+        <div class="search">
+            <input type="text" value="输入关键词">
+            <button><img src="images/btn.png"></button>
+        </div>
+
+        <div class="user">
+        </div>
+    </div>
 
 </body>
 
