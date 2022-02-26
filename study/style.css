@@ -275,6 +275,7 @@ clear:both;
 /* 最后面li的margin-right不用清零 */
 
 .box-bd ul li {
+    position: relative;
     float: left;
     height: 270px;
     width: 228px;
@@ -283,8 +284,15 @@ clear:both;
     margin-bottom: 15px;
 }
 
-.box-bd ul li img {
+.box-bd ul li>img {
     width: 100%;
+}
+    /* li>img子级的img和父级宽度一样，孙级不一样 */
+    
+.box-bd ul li em {
+    position: absolute;
+    top: 4px;
+    right: -4px;
 }
 
 .box-bd ul li h4 {
