@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            /* margin-top: 8px; */
+        }
+
+        .logo {
+            display: block;
+            width: 55px;
+            height: 55px;
+            overflow: hidden;
+            /* text-indent: -9999em;
+            text-align: left; */
+            background-color: #ff6700;
+            /* 背景必须放在共通里，不然图片背景颜色也会一起移动 */
+        }
+
+        .logo::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 55px;
+            height: 55px;
+            background: url(images/mi-logo.png) no-repeat center center;
+            opacity: 1;
+            transition: all .3s;
+        }
+
+        .logo::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 55px;
+            height: 55px;
+            background: url(images/mi-home.png) no-repeat center center;
+            opacity: 0;
+            transition: all .3s;
+            margin-left: -55px;
+        }
+
+        .logo:hover::before {
+            opacity: 0;
+            margin-left: 55px;
+        }
+
+        .logo:hover::after {
+            opacity: 1;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="" class="logo"></a>
+    </div>
+</body>
+
+</html>
