@@ -179,7 +179,7 @@
 }
 
 .dropdown .dd {
-    display: none;
+    /* display: none; */
     width: 210px;
     height: 465px;
     background-color: #c81623;
@@ -289,3 +289,15 @@
     margin-bottom: 10px;
 }
 
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.copyright {
+    line-height: 20px;
+}
